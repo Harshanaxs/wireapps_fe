@@ -1,0 +1,172 @@
+/* Default styles */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+.pageHeading {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    padding: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: scroll
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 4fr 4fr;
+}
+
+.card {
+    background: #ffffff;
+    width: 20%;
+    height: 100%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.homeCard {
+    background: #ffffff;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+}
+
+.carousel {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.categoryDiv {
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.categoryCardMen {
+    border-radius: 20px;
+
+}
+
+.categoryCardWomen {
+    border-radius: 20px;
+
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.details {
+    background: #ff5e84;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.price {
+    color: #0E42FD;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.description {
+    color: #0E0E0E;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.categoryCardMen {
+    width: 48%;
+    height: 200px;
+    background: #2BD9AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 50px;
+}
+
+.categoryCardWomen {
+    width: 48%;
+    height: 200px;
+    background: #FF5E84;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 50px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 80%;
+    }
+}
