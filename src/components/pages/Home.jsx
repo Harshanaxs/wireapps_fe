@@ -7,13 +7,6 @@ import { Header } from '../Header';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
-
-
-
-
-
-
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -38,6 +31,7 @@ export const Home = () => {
 
     const [items, setItems] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    // implement arra manipulation for flash sale
     const arrFn = (arr1, arr2) => {
         const result = [];
         let arr1Index = 0;
